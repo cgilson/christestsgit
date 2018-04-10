@@ -12,7 +12,5 @@ notifications:
   email: false
 
 script:
-  - echo "Travis Tag"
   - echo $TRAVIS_TAG
-  - echo "Travis Event Range"
   - echo $TRAVIS_COMMIT_RANGE
