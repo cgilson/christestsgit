@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - "7.7.1"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
+
+script:
+  - echo "Travis Tag"
+  - echo $TRAVIS_TAG
+  - echo "Travis Event Range"
+  - echo $TRAVIS_COMMIT_RANGE
